@@ -7,7 +7,7 @@ library googleapis_auth.auth;
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:http/http.dart';
+import 'package:http/http.dart' if (dart.library.js) 'http_node.dart';
 
 import 'src/auth_http_utils.dart';
 import 'src/crypto/pem.dart';

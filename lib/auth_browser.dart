@@ -7,7 +7,7 @@ library googleapis_auth.auth_browser;
 import 'dart:async';
 
 import 'package:http/browser_client.dart';
-import 'package:http/http.dart';
+import 'package:http/http.dart' if (dart.library.js) 'http_node.dart';
 
 import 'auth.dart';
 import 'src/auth_http_utils.dart';
